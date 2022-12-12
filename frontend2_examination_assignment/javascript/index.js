@@ -1,5 +1,5 @@
 ////////////////// Article data //////////////////////////
-fetch("/frontend2_HTML_CSS/frontend2_individuell_uppgift/assets/json/products.json")
+fetch("./assets/json/products.json")
   .then((response) => (response = response.json()))
   .then((events) => {
     function createCards() {
@@ -14,7 +14,7 @@ fetch("/frontend2_HTML_CSS/frontend2_individuell_uppgift/assets/json/products.js
         let article = document.createElement("ul");
 
         let pic = document.createElement("div");
-        pic.innerHTML = `<a href="../html/detailedinfo.html"><img src="${event.image}" alt="${event.name}"></a>`;
+        pic.innerHTML = `<a href="/frontend2_HTML_CSS/frontend2_examination_assignment/html/detailedinfo.html"><img src="${event.image}" alt="${event.name}"></a>`;
         article.appendChild(pic).setAttribute("class", `picture ${event.index}`);
 
         let prodName = document.createElement("h3");

@@ -8,7 +8,7 @@ fetch("../assets/json/products.json")
         let article = document.createElement("ul");
 
         let pic = document.createElement("div");
-        pic.innerHTML = `<a href="../html/detailedinfo.html"><img src="${event.image}" alt="${event.name}"></a>`;
+        pic.innerHTML = `<a href="/frontend2_HTML_CSS/frontend2_examination_assignment/html/detailedinfo.html"><img src="${event.image}" alt="${event.name}"></a>`;
         article.appendChild(pic).setAttribute("class", `picture ${event.index}`);
 
         let prodName = document.createElement("h3");
