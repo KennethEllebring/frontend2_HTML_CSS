@@ -1,0 +1,263 @@
+/* GENERAL */
+
+* {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: #fdfdfe;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  width: 100vw;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.link:hover {
+  border-bottom: brown solid 1px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  /*change to min() for layout solution*/
+}
+
+.tag {
+}
+
+h2.tag {
+  border-left: brown 2px solid;
+  padding-left: 10px;
+}
+
+.tag::before {
+}
+
+h2.tag::before {
+}
+
+/* HEADER */
+
+.header {
+  display: flexbox;
+  height: 4rem;
+  background-color: #4484ce;
+  color: #fff;
+}
+
+.header .container {
+  display: flex;
+  transform: translate(0, 50%);
+}
+
+.header-title-letter {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  background-color: #000;
+}
+
+.header-search {
+  display: flex;
+  background-color: #7aa8dc;
+  color: #fff;
+  margin-left: 100%;
+  transform: translate(0, 30%);
+}
+
+.header-search::placeholder {
+}
+
+nav .nav-list {
+  margin-left: 9rem;
+  gap: 4rem;
+  list-style: none;
+  display: flex;
+  transform: translate(0, 33%);
+}
+
+/* CONTENT */
+
+.main-header-header {
+  display: inline-block;
+  height: 4rem;
+  color: #4a4a4a;
+  transform: translate(0, 25%);
+}
+
+.section-header {
+  color: #4a4a4a;
+}
+/* ARTICLE */
+
+.article {
+  padding: 0.5rem;
+  background-image: linear-gradient(0deg, #2b5789, #4484ce);
+}
+
+.article:hover {
+  opacity: 0.5;
+  transform: scale(1.01);
+  transition: ease 0.5s;
+  cursor: pointer;
+}
+
+.featured-articles {
+  position: relative;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 2rem;
+}
+
+/* In pseudo redefine background gradient as .article-overlay */
+.article-overlay {
+}
+
+.article.main-article {
+  background-image: url(/Lektion2/uppgift/images/article/article-image1.jpeg);
+  grid-area: 1 / 1 / 4 / 3;
+}
+
+.article1 {
+  background-image: url(/Lektion2/uppgift/images/article/article-image2.jpeg);
+}
+
+.article2 {
+  background-image: url(/Lektion2/uppgift/images/article/article-image3.jpeg);
+}
+
+.article3 {
+  background-image: url(/Lektion2/uppgift/images/article/article-image4.jpeg);
+}
+
+.article4 {
+  background-image: url(/Lektion2/uppgift/images/article/article-image5.jpeg);
+}
+
+.article5 {
+  background-image: url(/Lektion2/uppgift/images/article/article-image6.jpeg);
+}
+
+.article6 {
+}
+
+.main-article-play-icon {
+}
+
+.main-article-play-icon:hover {
+}
+
+.article-content {
+  margin: 0.5rem;
+}
+
+.article-header.main-article-header {
+}
+
+.article-header {
+  background-color: #fff;
+  font-size: 20px;
+}
+
+.article-summery {
+  color: #d3d3d3;
+}
+
+.article-tag {
+  display: block;
+  height: 40px;
+  transform: translate(0, 50%);
+  color: #d3d3d3;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.article-tag:hover {
+}
+
+/* NEWS ARTICLE */
+
+.news-articles {
+  padding-top: 10px;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* background-color: red; */
+}
+
+.news-article {
+  padding: 1rem;
+  margin-bottom: -80px;
+  height: 350px;
+}
+
+.news-article-image {
+  height: 200px;
+}
+
+.news-article-image:hover {
+  opacity: 0.5;
+  transform: scale(1.01);
+  transition: ease 0.5s;
+  cursor: pointer;
+}
+
+.news-article-header {
+  color: #212121;
+  font-size: 20px;
+}
+
+.news-article-summary {
+  color: #4a4a4a;
+}
+
+.news-article-tag {
+  font-size: 14px;
+}
+
+.main-header-timestamp {
+  float: right;
+  color: #6c6c6c;
+  transform: translate(0, 120%);
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #4c4c4c;
+  color: #fff;
+  padding-bottom: 80px;
+  padding-top: 10px;
+}
+
+footer .link-grid {
+  padding-top: 20px;
+  gap: 8.8rem;
+  list-style: none;
+  display: flex;
+  transform: translate(-40px, 0);
+}
+
+.footer .footer-list-item {
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ken1s Begagnat</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <span class="logoicon">🏷</span>
+      <h1 class="logo">KENNETHS BEGAGNAT</h1>
+      <div class="breakrow"></div>
+      <span class="slogan">Där gamla prylar får nytt liv</span>
+      <div class="breakrow"></div>
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html"><button>Hem</button></a>
+          </li>
+          <li>
+            <a href="../html/products.html"><button>Alla produkter</button></a>
+          </li>
+          <li>
+            <a href="../html/newitem.html"><button>Skapa annons</button></a>
+          </li>
+          <li>
+            <a href="../html/about.html"><button>Om oss</button></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div class="heroBanner">
+      <p class="pageText">Skapa annons</p>
+    </div>
+    <br />
+    <br />
+    <center>
+      <form name="newItemForm" action="#!">
+        <input type="text" id="newproduct" placeholder="Namn på produkt" required />
+        <br />
+        <select id="category" name="category">
+          <option value="none" selected="selected">-- Välj kategori --</option>
+          <option value="electronics">Elektronik</option>
+          <option value="clothes">Kläder</option>
+          <option value="hobbies">Fritid & Hobby</option>
+          <option value="home">För Hemmet</option>
+          <option value="vehicles">Fordon</option>
+          <option value="other">Övrigt</option>
+        </select>
+        <br />
+        <input type="date" name="selectedDate" title="Välj datum för publicering" />
+        <br />
+        <textarea name="Beskrivning" id="description" cols="30" rows="10" placeholder="Kort beskrivning" required></textarea>
+        <br />
+        <div class="selectimg">
+          <label for="addimg" style="color: gold"
+            ><em>Lägg till Bild (png el. jpg)</em> <br /><br />
+            <input type="file" name="addimg1" id="addimg1" />
+            <input type="file" name="addimg2" id="addimg2" />
+            <input type="file" name="addimg3" id="addimg3" />
+            <input type="file" name="addimg4" id="addimg4" />
+          </label>
+        </div>
+        <br />
+        <input type="number" id="price" placeholder="Pris" required />
+        <br />
+        <input type="submit" id="sendbutton" />
+      </form>
+    </center>
+
+    <script>
+      document.forms["newItemForm"].addEventListener("submit", function (event) {
+        alert("Tack! Din produkt är inskickad för granskning");
+        this.style["display"] = "none";
+        event.preventDefault();
+      });
+    </script>
+  </body>
+</html>

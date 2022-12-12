@@ -1,0 +1,23 @@
+:root {
+}
+header {
+  border-bottom: 5px solid black;
+}
+nav {
+  padding: 10px;
+  border-bottom: 5px solid black;
+}
+.logoImg {
+  display: block;
+  margin: auto;
+  width: 15%;
+  min-height: 200px;
+  min-width: 200px;
+}
+.logoText {
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 10px;
+  font-size: 60px;
+  font-family: Arial;
+}

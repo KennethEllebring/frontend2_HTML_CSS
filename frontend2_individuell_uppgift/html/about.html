@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ken1s Begagnat</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <!-- CDN JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- CDN JQuery -->
+  </head>
+  <body>
+    <header class="header">
+      <span class="logoicon">🏷</span>
+      <h1 class="logo">KENNETHS BEGAGNAT</h1>
+      <div class="breakrow"></div>
+      <span class="slogan">Där gamla prylar får nytt liv</span>
+      <div class="breakrow"></div>
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html"><button>Hem</button></a>
+          </li>
+          <li>
+            <a href="../html/products.html"><button>Alla produkter</button></a>
+          </li>
+          <li>
+            <a href="../html/newitem.html"><button>Skapa annons</button></a>
+          </li>
+          <li>
+            <a href="../html/about.html"><button>Om oss</button></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div class="heroBanner">
+      <p class="pageText">Om oss</p>
+    </div>
+
+    <main class="aboutUs">
+      <div class="aboutWrapper">
+        <div class="companyInfo">
+          <ul>
+            <li><h2>Företaget</h2></li>
+            <br />
+            <li><p>Kenneths Begagnat är ett nystartat företag med kunden i focus och som värnar om en bättre miljö där gamla prylar får nytt liv.</p></li>
+            <br />
+            <br />
+            <li><h2>Teamet</h2></li>
+            <br />
+            <li>
+              <p>
+                Vi består av ett gäng personer med olika erfarenheter och bakgrunder, vi jobbar tillsammans mot samma mål där vi vill hjälpa <strong>DIG</strong> <br />
+                genom att ge dina gamla saker ett nytt värde.
+              </p>
+            </li>
+          </ul>
+          <div class="teamBanner">
+            <img class="team" src="../assets/img/team.jpg" alt="Bild på KB Teamet" />
+          </div>
+          <div class="ceoWrapper">
+            <img class="ceo" src="../assets/img/ceo.jpg" alt="Bild på KBs VD" />
+            <ul class="ulCeo">
+              <li>
+                <h2>Kenneth Ellebring</h2>
+              </li>
+              <li>
+                <p>
+                  Grundare och VD för Kenneths Begagnat. <br /><br />
+
+                  idén till företaget uppkom efter en flytt till nytt boende,<br />
+                  där många äldre saker skulle kastas och det var en granne <br />
+                  som kom förbi och sa att det var dom finaste stolarna han <br />
+                  sätt och erbjöd sig at köpa dom för en oanselig summa.
+                </p>
+              </li>
+              <br /><br />
+              <li>Telefonnummer: <a href="tel:0708686426">0708686426</a></li>
+              <li>Epost: <a href="mailto:kenneth.ellebring@gmail.com">kenneth.ellebring@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="contact">
+      <div class="contactWrap">
+        <form name="contactForm" class="contactForm" action="?">
+          <h2>Frågor:</h2>
+          <br />
+          <label for="name">Fyll i ditt namn:</label>
+          <input type="text" placeholder="Namn" id="name" required />
+          <br />
+          <label for="email">Fyll i din epostadress:</label>
+          <input type="email" placeholder="din@epost.nu" id="email" name="" required />
+          <br />
+          <label for="textarea">Kort beskrivning av ditt ärende:</label>
+          <textarea name="Beskrivning" placeholder="Kort beskrivning" id="textarea" cols="30" rows="10" required></textarea>
+          <br />
+          <input type="submit" id="sendbutton" />
+        </form>
+        <p class="contactAnswer">Tack för ditt meddelande. Vi återkopplar så fort vi kan</p>
+
+        <script>
+          $(".contactForm").submit(function (e) {
+            alert("Tack för ditt meddelande. Vi återkopplar så fort vi kan");
+            $(".contactForm").hide();
+            $(".contactAnswer").show();
+            e.preventDefault();
+          });
+        </script>
+      </div>
+    </section>
+  </body>
+</html>

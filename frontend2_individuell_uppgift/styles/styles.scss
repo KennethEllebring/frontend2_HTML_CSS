@@ -1,0 +1,403 @@
+/*---------- Variables ----------*/
+$bg-color: #232323;
+$primarycolor: #ffd700;
+
+/*---------- Mixins ----------*/
+@mixin moreInfo {
+  position: absolute;
+  color: $primarycolor;
+  background-color: $bg-color;
+  width: 40%;
+  overflow-y: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  & h3 {
+    padding-top: 2rem;
+    margin: 2rem;
+  }
+  & p.beskrivning {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-justify: auto;
+  }
+}
+@mixin closeButton {
+  color: $primarycolor;
+  text-decoration: none;
+  position: absolute;
+  right: 20px;
+  font-size: 60px;
+  z-index: 1;
+}
+/*---------- Fonts ----------*/
+@font-face {
+  font-family: TESLA;
+  src: url("../assets/fonts/TESLA.ttf");
+}
+
+/*---------- Body ----------*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url(../assets/img/bg_main.jpg);
+  background-blend-mode: darken;
+  background-attachment: fixed;
+}
+
+/*---------- Header ----------*/
+header {
+  justify-content: center;
+  background-color: $bg-color;
+  color: $primarycolor;
+  width: 100%;
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  position: fixed;
+  z-index: 1;
+
+  & .logoicon {
+    font-size: 3rem;
+    margin-left: 2rem;
+    transform: rotate(180deg);
+  }
+  & .logo {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    font-family: TESLA;
+  }
+  & .breakrow {
+    flex-basis: 100%;
+    height: 0;
+  }
+  & .slogan {
+    font-family: arial;
+    transform: translate(0, -25px);
+  }
+  /*---------- Nav ----------*/
+  & nav {
+    & ul {
+      list-style: none;
+      display: flex;
+      margin-bottom: 1rem;
+      & li {
+        & button {
+          width: 10rem;
+          height: 2rem;
+          border-radius: 2rem;
+          &:hover {
+            background-color: $primarycolor;
+            border: $primarycolor 1px solid;
+            cursor: pointer;
+          }
+          &:active {
+            background-color: #232323;
+            color: $primarycolor;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*---------- Main ----------*/
+div.heroBanner {
+  display: flex;
+  background-image: url(/assets/img/herobanner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 50%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  & p.pageText {
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $primarycolor;
+
+    & .font_change {
+      font-size: 4rem;
+      font-family: Tesla;
+    }
+  }
+}
+main.products {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  & div#cards {
+    padding-top: 2rem;
+    color: $primarycolor;
+    max-width: 1500px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    & ul.card {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      background-color: $bg-color;
+      padding: 1rem;
+      width: 360px;
+      height: 200px;
+      overflow: hidden;
+
+      & h3.product {
+        margin-left: 1rem;
+        overflow: hidden;
+      }
+      & div.picture {
+        display: flex;
+        margin-right: 1rem;
+
+        & img {
+          width: 200px;
+          height: 200px;
+          object-fit: cover;
+        }
+        &:hover {
+          scale: 1.05;
+          cursor: pointer;
+          &::after {
+            position: absolute;
+            top: 45%;
+            left: 25%;
+            content: "Öppna produkt";
+            pointer-events: none; // creds to Alex Saxena!
+            padding: 5px;
+            background-color: $bg-color;
+            color: $primarycolor;
+          }
+        }
+        &:active {
+          opacity: 0.2;
+        }
+      }
+      & li.info {
+        margin-left: 1rem;
+        height: fit-content;
+        list-style: none;
+        width: 140px;
+      }
+      & button {
+        width: 100px;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        & button:hover {
+          background-color: $primarycolor;
+          cursor: pointer;
+        }
+      }
+      & p.price {
+        margin-left: 1rem;
+        margin-top: 4rem;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+/*---------- overlay info boxes ----------*/
+section {
+  & div.bigCard {
+    @include moreInfo;
+    & .closebtn {
+      @include closeButton;
+    }
+  }
+}
+/*---------- detailedinfo ----------*/
+div.hugeCard {
+  color: $primarycolor;
+  margin-top: 2rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  & div.wrapper {
+    background-color: $bg-color;
+    border: $primarycolor 5px solid;
+    padding: 2rem;
+    & div.productHeader {
+      & h2 {
+        font-size: 5rem;
+        margin: 0px;
+      }
+    }
+    & ul.spec {
+      list-style: none;
+      & li {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        & span.kat {
+          color: #887400;
+          font-size: 1.5rem;
+          font-weight: 900;
+        }
+        & span.info {
+          font-size: 1.5rem;
+          font-weight: 500;
+        }
+        & button.desc {
+          height: 2rem;
+          width: 10rem;
+          cursor: pointer;
+          &:hover {
+            background-color: $primarycolor;
+          }
+        }
+      }
+    }
+    & div.gallery {
+      margin-top: 2rem;
+      & ul.galleryList {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+        & li {
+          & img.galleryImg {
+            height: 150px;
+            border: rgba(0, 0, 0, 0) 5px solid;
+          }
+          & :hover {
+            border: $primarycolor 5px solid !important;
+            scale: 1.2;
+          }
+        }
+      }
+    }
+  }
+}
+/*---------- Newitem form ----------*/
+form {
+  background-color: $bg-color;
+  padding: 2rem;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  & #newproduct {
+    font-size: 2rem;
+    height: 2rem;
+    border: rgba(0, 0, 0, 0) 5px solid;
+    &:hover {
+      border: $primarycolor 5px solid;
+    }
+  }
+  & #category {
+    border: rgba(0, 0, 0, 0) 5px solid;
+    &:hover {
+      border: $primarycolor 5px solid;
+    }
+  }
+
+  & #description {
+    font-size: 1rem;
+    border: rgba(0, 0, 0, 0) 5px solid;
+    height: 100px;
+    &:hover {
+      border: $primarycolor 5px solid;
+    }
+  }
+  & .selectimg {
+    padding: 0.5rem;
+    & input {
+      border: rgba(0, 0, 0, 0) 5px solid;
+      &:hover {
+        border: $primarycolor 5px solid;
+      }
+    }
+  }
+  & #price {
+    font-size: 1rem;
+    height: 2rem;
+    border: rgba(0, 0, 0, 0) 5px solid;
+    &:hover {
+      border: $primarycolor 5px solid;
+    }
+  }
+  & #sendbutton {
+    font-size: 1rem;
+    height: 2rem;
+    border-radius: 20px;
+    &:hover {
+      background-color: $primarycolor;
+      border: $primarycolor 1px solid;
+    }
+  }
+}
+/*---------- About ----------*/
+main.aboutUs {
+  color: $primarycolor;
+  margin-top: 2rem;
+  & div.aboutWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    & div.companyInfo {
+      background-color: $bg-color;
+      padding: 4rem;
+      & ul {
+        list-style: none;
+      }
+      & div.teamBanner {
+        margin-top: 2rem;
+        & img.team {
+          border: $primarycolor 5px solid;
+          width: 100%;
+          height: 250px;
+          object-fit: cover;
+          object-position: 0 70%;
+        }
+      }
+      & div.ceoWrapper {
+        margin-top: 2rem;
+        display: flex;
+        & img.ceo {
+          border: $primarycolor 5px solid;
+          height: 250px;
+        }
+        & ul.ulCeo {
+          margin-left: 1rem;
+          & li {
+            & a {
+              color: $primarycolor;
+              &:hover {
+                color: red;
+                scale: 1.8;
+              }
+            }
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+section.contact {
+  color: $primarycolor;
+  background-color: #636363;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  justify-content: center;
+  & div.contactWrap {
+    display: flex;
+    justify-content: center;
+    & form.contactForm {
+    }
+  }
+  & p.contactAnswer {
+    display: none;
+    font-size: 40px;
+  }
+}

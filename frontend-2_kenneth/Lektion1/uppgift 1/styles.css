@@ -1,0 +1,17 @@
+/* *{
+style everything
+} */
+
+header {
+  text-align: center;
+}
+li {
+  display: inline;
+  padding-left: 15px;
+}
+
+.iphone {
+  position: absolute;
+  width: 100px;
+  margin-left: 15%;
+}

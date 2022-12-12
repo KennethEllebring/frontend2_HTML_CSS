@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Uppgift 1</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+      <h1>Uppgift 1 Frontend</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Länk 1</a></li>
+          <li><a href="#">Länk 2</a></li>
+          <li><a href="#">Länk 3</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--Main    -->
+    <main>
+      <section>
+        <div>
+            <img class="iphone" src="media/ihpone.jpg" alt="bild på en iphone 17">
+          <h3>iPhone 17</h3>
+          <p>Mobiltelefon</p>
+          <p><em>Pris:<stong style="color: red;">14999kr</stong></em></p>
+          <p><strike>Gammalt pris: 19999kr</strike></em></p>
+          <p><strong>Köp nu!</strong></p>
+        </div>
+      </section>
+      <section>
+        <form action="get_to_the_choppa" id="forminfo">
+            <label for="firstName">
+              Förnamn:
+            </label>
+            <br>
+            <input type="text" name="firstName" id="firstName" required placeholder="Förnamn">
+            <br><br>
+              <label for="sireName">
+                Efternamn:
+              </label>
+              <br>
+              <input type="text" name="sireName" id="sireName" required placeholder="Efternamn">
+              <br><br>
+              <label for="age">
+                Hur många år är du?
+              </label>
+              <br>
+              <input type="number" name="age" id="age" required placeholder="1 - 999">
+              <br><br>
+              <label for="email">
+                Email:
+              </label>
+              <br>
+              <input type="email" name="email" id="email" required placeholder="namn@something.se">
+              <br><br>
+              <button type="submit">Skicka in bokning</button>
+              <button type="reset">Nollställ</button></form>
+            </section>
+    </main>
+  </body>
+</html>

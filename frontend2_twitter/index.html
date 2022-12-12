@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Twitter lookalike" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>Twitter lookalike</title>
+</head>
+
+<body class="d-flex container mt-3 w-auto fs-6">
+  <div class="row">
+    <!-- Kenneth header -->
+    <header class="col">
+      <nav class="me-0 pe-0">
+        <ul class="list-unstyled w-auto">
+          <li><img src="/assets/Twitter-Icons/svgexport-1.svg" height="40px" class="mb-4" alt="tweeter logo" /></li>
+          <li>
+            <a href="home"><button class="btn btn-light fs-5 rounded-pill mb-2">
+                <img src="/assets/Twitter-Icons/svgexport-2.svg" alt="Home icon" /><label
+                  class="d-none d-xxl-inline me-0"><strong> Home </strong></label>
+              </button></a>
+          </li>
+          <li>
+            <a href="explore"><button class="btn btn-light fs-5 rounded-pill mb-2"><img
+                  src="/assets/Twitter-Icons/svgexport-3.svg" alt="Explore icon" /><label class="d-none d-xxl-inline">
+                  Explore </label></button></a>
+          </li>
+          <li>
+            <a href="communities"><button class="btn btn-light fs-5 rounded-pill mb-2"><img
+                  src="/assets/Twitter-Icons/svgexport-4.svg" alt="Communities icon" /><label
+                  class="d-none d-xxl-inline"> Communities </label></button></a>
+          </li>
+          <li>
+            <a href="notefication"><span class="badge rounded-circle bg-info position-absolute">3</span><button
+                class="btn btn-light fs-5 rounded-pill mb-2"><img src="/assets/Twitter-Icons/svgexport-5.svg"
+                  alt="Notefication icon" /><label class="d-none d-xxl-inline"> Notifications </label></button></a>
+          </li>
+          <li>
+            <a href="messages"><button class="btn btn-light fs-5 rounded-pill mb-2"><img
+                  src="/assets/Twitter-Icons/svgexport-6.svg" alt="Messages icon" /><label class="d-none d-xxl-inline">
+                  Messages </label></button></a>
+          </li>
+          <li>
+            <a href="bookmarks"><button class="btn btn-light fs-5 rounded-pill mb-2"><img
+                  src="/assets/Twitter-Icons/svgexport-7.svg" alt="Bookmark icon" /><label class="d-none d-xxl-inline">
+                  Bookmarks </label></button></a>
+          </li>
+          <li>
+            <a href="profile"><button class="btn btn-light fs-5 rounded-pill mb-2"><img
+                  src="/assets/Twitter-Icons/svgexport-8.svg" alt="Profile icon" /><label class="d-none d-xxl-inline">
+                  Profile </label></button></a>
+          </li>
+          <li>
+            <a href="more"><button class="btn btn-light fs-5 rounded-pill mb-2"><img
+                  src="/assets/Twitter-Icons/svgexport-9.svg" alt="More icon" /><label class="d-none d-xxl-inline"> More
+                </label></button></a>
+          </li>
+          <li>
+            <a href="tweet"><button type="button" class="btn btn-info rounded-5 text-light fs-5 mt-3">
+                <img src="/assets/Twitter-Icons/svgexport-21.svg" alt="Tweet button" /><label
+                  class="d-none d-xxl-inline"><strong class="px-4"> Tweet </strong></label>
+              </button></a>
+          </li>
+          <li class="position-absolute bottom-0">
+            <a href="profile">
+              <button type="button" class="btn btn-light rounded-5 mt-5">
+                <div class="d-flex">
+                  <img src="/assets/Twitter-Icons/svgexport-8.svg" alt="userPicture" />
+                  <div class="flex-wrap me-0">
+                    <span class="d-none d-xxl-inline"><strong>Test Testsson<br /></strong></span>
+                    <span class="d-none d-xxl-inline">@TestTestsson</span>
+                  </div>
+                </div>
+              </button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <!-- Alexander main/section -->
+
+  <!-- Main sections-header: tweet section, add images, geolocation, gif etc, write tweet and click "tweet" -->
+  <main class="w-50  border-secondary" style="height: 40rem; min-width: 19rem;">
+    <div class="header p-1 d-none d-xl-inline">
+      <div class="border-top border-start border-end d-flex justify-content-between p-1">
+        <span class="fw-bold fs-4">Home</span>
+        <img src="./assets/Twitter-Icons/svgexport-11.svg" alt="Sparkly icon" />
+      </div>
+
+      <div class="d-flex border-bottom border-start border-end">
+        <div class="p-2">
+          <img class="rounded-circle" style="height: 2rem; width: 2rem;"
+            src="./assets/Screenshot from 2022-10-31 19-35-48.png" alt="Profile picture" />
+        </div>
+
+        <div class="icons w-100">
+          <div class="p-2 border-0">
+
+            <input type="text" class="text-secondary fs-5 border-0 w-75" placeholder="What's happening"></input>
+          </div>
+
+          <div class="d-flex justify-content-between p-2">
+            <div class="d-flex">
+              <div>
+                <img class="btn p-1" src="./assets/icons8-picture-50.png" style="height: 2rem;" alt="icon" />
+              </div>
+
+              <div>
+                <img class="btn p-1" src="./assets/icons8-gif-50.png" style="height: 2rem;" alt="icon" />
+              </div>
+
+              <div>
+                <img class="btn p-1 d-none d-xxl-inline" src="./assets/icons8-bulleted-list-50.png"
+                  style="height: 2rem;" alt="icon" />
+              </div>
+
+              <div>
+                <img class="btn p-1" src="./assets/icons8-happy-50.png" style="height: 2rem;" alt="icon" />
+              </div>
+
+              <div>
+                <img class="btn p-1" src="./assets/icons8-calendar-week-50.png" style="height: 2rem;" alt="icon" />
+              </div>
+
+              <div>
+                <img class="btn p-1" src="./assets/icons8-marker-o-50.png" style="height: 2rem;" alt="icon" />
+              </div>
+            </div>
+
+            <div class="">
+              <button type="button" class="btn btn-sm btn-info text-white rounded-pill fw-bold">Tweet</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section hiding other peoples tweets from last login. Click on the text to show tweets -->
+    <div class="border p-1"></div>
+    <div class="border p-1 d-flex justify-content-center">
+      <span class="text-info fw-bold p-2 fs-6">Show 35 Tweets</span>
+    </div>
+
+    <!-- Card. Each card represents a tweet.  -->
+
+    <div class="card-content border p-1 one-tweet hover-shadow">
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <div>
+            <img class="ps-4" src="./assets/Twitter-Icons/svgexport-28.svg" alt="icon" />
+          </div>
+          <div class="ps-2 text-secondary">Tech Industry</div>
+          <div class="ps-2 text-info fw-bold">More</div>
+        </div>
+
+        <div>
+          <img src="./assets/Twitter-Icons/svgexport-29.svg" alt="exit button image" />
+        </div>
+      </div>
+
+      <div class="d-flex">
+        <div class="p-1">
+          <img class="rounded-circle" style="height: 2rem;
+          width: 2rem;" src="./assets/Screenshot from 2022-11-05 14-48-05.png" alt="Profile picture" />
+        </div>
+
+        <div>
+          <div class="d-flex">
+            <div class="d-flex pt-2 ps-2">
+              <p class="fw-bold fs-6">Fascinate</p>
+              <p class="text-secondary ps-1 fs-6">@fasc1nate - 17h</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ps-5 fs-6">
+        <p>Thirty years of development at Boston Dynamics led to their Robot, Atlas</p>
+      </div>
+
+      <div class="ps-5">
+        <img class="main-img pe-1 w-100 h-100 rounded-4" src="./assets/Atlas-FinalArt.jpg" alt="Main image" />
+      </div>
+
+      <div class="ps-5">
+        <span class="text-secondary">From</span>
+        <span class="fw-bold"> Habichuela Con Dulche</span>
+      </div>
+
+      <div class="d-flex justify-content-between ps-5 pt-2 pe-3">
+        <div class="d-flex">
+          <div class="btn btn-lg p-0">
+            <img class="bottom-icons pb-1" src="./assets/Twitter-Icons/svgexport-21.svg" alt="icon" />
+          </div>
+
+          <span class="pt-2 ps-2">2,456</span>
+        </div>
+        <div class="d-flex">
+          <div class="btn btn-lg p-0">
+            <img class="pb-1" src="./assets/Twitter-Icons/svgexport-22.svg" alt="icon" />
+          </div>
+
+          <span class="pt-2 ps-2">856</span>
+        </div>
+        <div class="d-flex">
+          <div class="btn btn-lg p-0">
+            <img class="pb-1" src="./assets/Twitter-Icons/svgexport-23.svg" alt="icon" />
+          </div>
+
+          <span class="pt-2 ps-2">3,221</span>
+        </div>
+        <div class="d-flex">
+          <div class="btn btn-lg p-0">
+            <img class="pb-1" src="./assets/Twitter-Icons/svgexport-24.svg" alt="icon" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second card -->
+
+    <div class="card-content border p-1 one-tweet">
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <div>
+            <img class="ps-4" src="./assets/Twitter-Icons/svgexport-28.svg" alt="bubble icon" />
+          </div>
+          <div class="ps-2 text-secondary">Space Industry</div>
+          <div class="btn-lg ps-2 text-info fw-bold">More</div>
+        </div>
+
+        <div>
+          <img src="./assets/Twitter-Icons/svgexport-29.svg" alt="exit button icon" />
+        </div>
+      </div>
+
+      <div class="d-flex">
+        <div class="p-1">
+          <img class="rounded-circle" style="height: 2rem;
+          width: 2rem;" src="./assets/Screenshot from 2022-11-06 15-32-22.png" alt="Profile picture" />
+        </div>
+
+        <div>
+          <div class="d-flex">
+            <div class="d-flex pt-2 ps-2">
+              <p class="fw-bold fs-6">Ipsum</p>
+              <p class="text-secondary ps-1 fs-6">@lorem - 2h</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ps-5 fs-6">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eaque vero accusantium ut aut soluta
+          suscipit in deleniti asperiores, illum adipisci delectus! Mollitia a adipisci aut repellat itaque debitis est.
+        </p>
+      </div>
+
+      <div class="ps-5">
+        <img class="main-img img-fluid pe-1 rounded-4" src="./assets/kobby-mendez-d0oYF8hm4GI-unsplash.jpg"
+          alt="main image" />
+      </div>
+
+      <div class="ps-5">
+        <span class="text-secondary">From</span>
+        <span class="fw-bold"> Lorem, ipsum.</span>
+      </div>
+
+      <div class="d-flex justify-content-between ps-5 pt-2">
+        <div class="d-flex">
+          <div class="btn btn-lg p-0">
+            <img class="pb-1" src="./assets/Twitter-Icons/svgexport-21.svg" alt="bubble icon" />
+          </div>
+
+          <span class="pt-2 ps-2">2</span>
+        </div>
+        <div class="d-flex">
+          <div class="btn btn-lg p-0">
+            <img class="pb-1" src="./assets/Twitter-Icons/svgexport-22.svg" alt="share icon" />
+          </div>
+
+          <span class="pt-2 ps-2">3</span>
+        </div>
+
+        <div class="d-flex">
+          <div class="btn btn-lg p-0">
+            <img class="pb-1" src="./assets/Twitter-Icons/svgexport-23.svg" alt="heart icon" />
+          </div>
+
+          <span class="pt-2 ps-2">2</span>
+        </div>
+        <div class="d-flex btn btn-lg">
+          <img src="./assets/Twitter-Icons/svgexport-24.svg" alt="upload icon" />
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Anton side/footer -->
+  <footer class="w-25 mb-3 d-none d-xl-inline">
+    <div class="container">
+      <form>
+        <input class="rounded-5 border-0 mb-3 form-control" placeholder="Search Twitter"
+          style="background-color: #f7f9f9" />
+      </form>
+      <div class="card border-0 mb-3">
+        <div class="card-header border-0"><b>Trends for you</b></div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item border-0" style="background-color: #f7f9f9">
+            <small>Technology - Trending</small>
+            <p><b>JSON</b></p>
+            <small>2,287 Tweets</small>
+          </li>
+          <li class="list-group-item border-0" style="background-color: #f7f9f9">
+            <small>Trending in Sweden</small>
+            <p><b>Riksbanken</b></p>
+            <small>1,472 Tweets</small>
+          </li>
+          <li class="list-group-item border-0" style="background-color: #f7f9f9">
+            <small>Trending in Sweden</small>
+            <p><b>Kanelbulle</b></p>
+            <small>1,542 Tweets</small>
+          </li>
+          <li class="list-group-item border-0" style="background-color: #f7f9f9">
+            <small>Trending</small>
+            <p><b>Putin</b></p>
+            <small>9,783 Tweets</small>
+          </li>
+          <li class="list-group-item border-0" style="background-color: #f7f9f9">
+            <small>Gaming - Trending</small>
+            <p><b>Esports</b></p>
+            <small>35.2K Tweets</small>
+          </li>
+          <li class="list-group-item border-0" style="background-color: #f7f9f9">
+            <small>Trending</small>
+            <p><b>Faker</b></p>
+            <small>121K Tweets</small>
+          </li>
+          <li class="list-group-item border-0" style="background-color: #f7f9f9">
+            <small>Trending</small>
+            <p><b>Cars</b></p>
+            <small>22.5K Tweets</small>
+          </li>
+        </ul>
+      </div>
+      <div class="card mt">
+        <div class="card-header"><b>Who to follow</b></div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item" style="background-color: #f7f9f9">
+            <b>Person1</b>
+            <p>@person1</p>
+          </li>
+          <li class="list-group-item" style="background-color: #f7f9f9">
+            <b>Person2</b>
+            <p>@person2</p>
+          </li>
+          <li class="list-group-item" style="background-color: #f7f9f9">
+            <b>Person3</b>
+            <p>@person3</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2027a0efb7.js" crossorigin="anonymous"></script><!--My fontawesome icons-->
+    <title>Instagram replica</title>
+    <style>
+        body {
+          margin: 0;
+        }
+        nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            position:fixed;
+        }
+        
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          width: 25%;
+          background-color: #f1f1f1;
+          position: fixed;
+          height: 100%;
+          overflow: auto;
+        }
+        
+        li a {
+          display: block;
+          color: #000;
+          padding: 8px 16px;
+          text-decoration: none;
+        }
+        
+        li a.active {
+          background-color: #04AA6D;
+          color: white;
+        }
+        
+        li a:hover:not(.active) {
+          background-color: #555;
+          color: white;
+        }
+
+        .articles {
+           width:400px;
+           height:auto;
+           margin-top:36px;
+           background-color:white;
+           display:block;
+           margin-left:auto;
+           margin-right:auto;
+        }
+
+        .articles img {
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        }
+
+        .articles input {
+            width:393px;
+        }
+
+        .article-text {
+            color:yellowgreen;
+            text-align:center;
+        }
+        </style>
+</head>
+        <body>
+        <nav>
+            <a href="#home"><img style="height:50px; width:70px; display:block; margin-left:auto; margin-right:auto;" src="https://i0.wp.com/www.dafontfree.io/wp-content/uploads/2020/12/instagram-old.png" alt="Logotype instagram" /></a>
+            <ul>
+                <li><a class="active" href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#search"><i class="fas fa-search"></i> Search</a></li>
+                <li><a href="#explore"><i class="fas fa-plus"></i> Explore</a></li>
+                <li><a href="#messages"><i class="fas fa-envelope"></i> Messages</a></li>
+                <li><a href="#notifications"><i class="fas fa-heart"></i> Notifications</a></li>
+                <li><a href="#settings"><i class="fas fa-cog"></i> Settings</a></li>
+                <li><a href="#profile"><i class="fas fa-user"></i> Profile</a></li>
+              </ul>
+        </nav>
+        <div style="margin-left:25%;padding:1px 16px;height:auto; background-color:lightgray;">
+            <div class="articles">
+                <p>@<strong><a style="color:rgb(18, 188, 235);" href="#profile">Quinyx</a></strong></p>
+                <img src="https://picsum.photos/300" alt="Random image application" />
+                <div class="article-text">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae molestias, suscipit vel blanditiis dolorem atque natus delectus officiis ut, id expedita nihil. Fugit consectetur vel eveniet culpa beatae facilis doloribus!</p>
+                </div>
+                <input type="text" name="text" id="text" placeholder="Add a comment..">
+            </div>
+            <div class="articles">
+                <p>@<strong><a style="color:rgb(18, 188, 235);" href="#profile">Hanin</a></strong></p>
+                <img src="https://picsum.photos/300" alt="Random image application" />
+                <div class="article-text">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat quidem ea! Suscipit voluptatem deleniti quo. Ratione fugiat qui consequatur, dicta illo suscipit odio quo assumenda aperiam, labore voluptas nemo!</p>
+                </div>
+                <input type="text" name="text" id="text" placeholder="Add a comment..">
+            </div>
+            <div class="articles">
+                <p>@<strong><a style="color:rgb(18, 188, 235);" href="#profile">Lucas</a></strong></p>
+                <img src="https://picsum.photos/300" alt="Random image application" />
+                <div class="article-text">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque fugit modi at repellendus sapiente neque nesciunt nihil, molestias in blanditiis eius esse beatae deleniti, facilis unde aliquam necessitatibus ab a!</p>
+                </div>
+                <input type="text" name="text" id="text" placeholder="Add a comment..">
+            </div>
+        </div>
+</body>
+</html>

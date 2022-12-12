@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Boka</title>
+  </head>
+  <body>
+    <header>
+        <img src="media/logo.jpg" alt="Phat Cats logo" class="logoImg" />
+        <p class="logoText">Phat Cat</p>
+      </header>
+      <section>
+        <nav>
+          <a href="index.html"><button>Hem</button></a>
+          <a href="menu.html"><button>Meny</button></a>
+          <a href="booking.html"><button>Boka bord</button></a>
+          <a href="about.html"><button>Om oss</button></a>
+        </nav>
+    </header>
+    <div><h2>Boka bord</h2></div>
+    <main>
+      <section>
+        <form action="get_to_the_choppa">
+          <label for="uniktID">
+            Datum:
+          </label>
+          <br>
+          <input type="date" name="date" id="uniktID">
+          <br><br>
+          <label for="uniktID">
+            Förnamn:
+          </label>
+          <br>
+          <input type="text" name="firstName" id="uniktID" placeholder="Förnamn">
+          <br><br>
+            <label for="uniktID">
+              Efternamn:
+            </label>
+            <br>
+            <input type="text" name="firstName" id="uniktID" placeholder="Efternamn">
+            <br><br>
+            <label for="uniktID">
+              Hur många gäster?
+            </label>
+            <br>
+            <input type="number" name="guests" id="uniktID" placeholder="1 - 999">
+            <br><br>
+            <label for="uniktID">
+              Allergier?
+            </label>
+            <br>
+            Inga
+            <input type="checkbox" name="none" id="uniktID">
+            <strong>|</strong> Mjölk 
+            <input type="checkbox" name="milk" id="uniktID">
+            <strong>|</strong> Gluten
+            <input type="checkbox" name="gluten" id="uniktID">
+            <strong>|</strong> Annat:
+            <input type="text" name="allergies" id="uniktID">
+            <br><br>
+            <button type="submit">Skicka in bokning</button>
+            <button type="reset">Nollställ</button></form>
+      </section>
+    </main>
+  </body>
+</html>
