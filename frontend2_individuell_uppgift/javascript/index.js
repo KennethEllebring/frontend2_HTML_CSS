@@ -1,5 +1,5 @@
 ////////////////// Article data //////////////////////////
-fetch("../assets/json/products.json")
+fetch("/frontend2_HTML_CSS/frontend2_individuell_uppgift/assets/json/products.json")
   .then((response) => (response = response.json()))
   .then((events) => {
     function createCards() {
