@@ -1,2 +1,3 @@
 # frontend2_HTML_CSS
-All frontend2 repos
+
+A collection of my work in frontend2 HTML and CSS
